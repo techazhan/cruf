@@ -21,31 +21,56 @@
 
 ---
 
-## Quick Install
+## Download & Install
 
-### One-Liner
+### 🚀 Option 1: Self-Contained Installer (No Dependencies Needed)
 
-```bash
-# macOS / Linux
-curl -fsSL https://cruf.ai/install.sh | bash
+Download a **single `.ps1` file** that contains everything. No npm, no git required.
 
-# Windows (PowerShell)
-iwr -useb https://cruf.ai/install.ps1 | iex
-```
+| Platform | File | Size | How to Run |
+|----------|------|------|------------|
+| **Windows** | `install-cruf.ps1` | ~481 KB | `powershell -ExecutionPolicy Bypass -File install-cruf.ps1` |
+| **macOS/Linux** | `install.sh` | ~3 KB | `chmod +x install.sh && ./install.sh` |
 
-### npm
+The self-contained installer (`install-cruf.ps1`) embeds the entire project as base64 —
+just share that one file and anyone can get Cruf in seconds.
+
+### 📦 Option 2: npm (Once Published)
 
 ```bash
 npm install -g cruf
 ```
 
-### Manual
+### 🐙 Option 3: GitHub
 
 ```bash
 git clone https://github.com/cruf/cruf.git
 cd cruf
 npm install
 npm link
+```
+
+### 📎 Option 4: Download ZIP
+
+Download `cruf-v1.0.0.zip`, extract, then:
+```bash
+cd cruf
+npm install
+npm link
+```
+
+### 🔧 Option 5: Bootstrap (Tiny Web Installer)
+
+Share a **2 KB script** that fetches Cruf from the internet:
+
+**Windows (PowerShell):**
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/bootstrap-installer.ps1
+```
+
+**macOS / Linux:**
+```bash
+curl -fsSL https://cruf.ai/install.sh | bash
 ```
 
 ---
