@@ -65,8 +65,8 @@ function setup() {
   console.log('    cruf --help          View all options');
   console.log('');
   console.log('  ────────────────────────────────────────────────');
-  console.log('  Documentation: https://github.com/cruf/cruf');
-  console.log('  Report issues: https://github.com/cruf/cruf/issues');
+  console.log('  Documentation: https://github.com/techazhan/cruf');
+  console.log('  Report issues: https://github.com/techazhan/cruf/issues');
   console.log('');
 }
 

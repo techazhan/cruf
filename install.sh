@@ -68,7 +68,7 @@ else
 
     INSTALL_DIR="${HOME}/cruf"
     if [ ! -d "$INSTALL_DIR" ]; then
-        git clone https://github.com/cruf/cruf.git "$INSTALL_DIR" 2>/dev/null || {
+        git clone https://github.com/techazhan/cruf.git "$INSTALL_DIR" 2>/dev/null || {
             echo -e "  ${RED}✘ Failed to clone repository.${NC}"
             echo -e "    Please install manually: npm install -g cruf"
             exit 1
@@ -141,6 +141,6 @@ echo -e '    cruf "hello"             One-shot mode'
 echo -e "    cruf --init              Init config in project"
 echo -e "    cruf --help              View all options"
 echo ""
-echo -e "  ${GREEN}https://github.com/cruf/cruf${NC}"
+echo -e "  ${GREEN}https://github.com/techazhan/cruf${NC}"
 echo -e "  ${CYAN}────────────────────────────────────────────────${NC}"
 echo ""

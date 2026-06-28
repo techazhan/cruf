@@ -135,7 +135,7 @@ Write-Host "  Set API Key (optional):" -ForegroundColor White
 Write-Host '    `$env:CRUF_API_KEY = "your-key"' -ForegroundColor Gray
 Write-Host ""
 Write-Host "  Documentation:" -ForegroundColor White
-Write-Host "    https://github.com/cruf/cruf" -ForegroundColor Blue
+Write-Host "    https://github.com/techazhan/cruf" -ForegroundColor Blue
 Write-Host "  ────────────────────────────────────────────────" -ForegroundColor Cyan
 Write-Host ""
 "@

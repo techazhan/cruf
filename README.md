@@ -44,7 +44,7 @@ npm install -g cruf
 ### 🐙 Option 3: GitHub
 
 ```bash
-git clone https://github.com/cruf/cruf.git
+git clone https://github.com/techazhan/cruf.git
 cd cruf
 npm install
 npm link
@@ -219,7 +219,7 @@ Skills are stored in `.agents/skills/` following the OpenCode skill format.
 
 ```bash
 # Clone
-git clone https://github.com/cruf/cruf.git
+git clone https://github.com/techazhan/cruf.git
 cd cruf
 
 # Install dependencies
@@ -298,7 +298,7 @@ MIT — see [LICENSE](LICENSE)
 
 <p align="center">
   <b>Built with ❤️ by Cruf Labs</b><br>
-  <a href="https://github.com/cruf/cruf">GitHub</a> •
+  <a href="https://github.com/techazhan/cruf">GitHub</a> •
   <a href="https://cruf.ai">Website</a> •
   <a href="https://twitter.com/cruf">Twitter</a>
 </p>

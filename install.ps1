@@ -80,7 +80,7 @@ function Install-Cruf {
 
         # Clone or copy
         if (-not (Test-Path $installDir)) {
-            git clone https://github.com/cruf/cruf.git $installDir 2>$null
+            git clone https://github.com/techazhan/cruf.git $installDir 2>$null
             if ($LASTEXITCODE -ne 0) {
                 Write-Host "  ✘ Failed to clone repository." -ForegroundColor Red
                 Write-Host "    Please install manually: npm install -g cruf"
@@ -163,7 +163,7 @@ function Print-Success {
     Write-Host "    cruf --help                View all options"
     Write-Host ""
     Write-Host "  Documentation:" -ForegroundColor White
-    Write-Host "    https://github.com/cruf/cruf" -ForegroundColor Blue
+    Write-Host "    https://github.com/techazhan/cruf" -ForegroundColor Blue
     Write-Host "  ────────────────────────────────────────────────" -ForegroundColor Cyan
     Write-Host ""
 }

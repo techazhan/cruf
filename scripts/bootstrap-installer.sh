@@ -11,7 +11,7 @@
 set -euo pipefail
 
 CRUF_NPM_PACKAGE="cruf"
-CRUF_GITHUB_REPO="https://github.com/cruf/cruf"
+CRUF_GITHUB_REPO="https://github.com/techazhan/cruf"
 CRUF_VERSION="1.0.0"
 
 # Colors

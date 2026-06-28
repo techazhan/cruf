@@ -131,7 +131,7 @@ $writer.WriteLine('Write-Host ""')
 $writer.WriteLine('Write-Host "  Set API Key (optional):" -ForegroundColor White')
 $writer.WriteLine('Write-Host "    `$env:CRUF_API_KEY = `"your-key`"" -ForegroundColor Gray')
 $writer.WriteLine('Write-Host ""')
-$writer.WriteLine('Write-Host "  Docs: https://github.com/cruf/cruf" -ForegroundColor Blue')
+$writer.WriteLine('Write-Host "  Docs: https://github.com/techazhan/cruf" -ForegroundColor Blue')
 $writer.WriteLine('Write-Host "  ------------------------------------------------" -ForegroundColor Cyan')
 $writer.WriteLine('Write-Host ""')
 
