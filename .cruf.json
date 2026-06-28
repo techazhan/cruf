@@ -1,0 +1,144 @@
+{
+  "$schema": "https://cruf.ai/config.json",
+  "version": "1.0.0",
+
+  "default_provider": "opencode",
+  "default_model": "deepseek-v4-flash-free",
+
+  "providers": {
+    "opencode": {
+      "api_base": "https://api.opencode.ai/v1",
+      "api_key": "",
+      "models": {
+        "deepseek-v4-flash-free": {
+          "max_tokens": 64000,
+          "temperature": 0.7,
+          "description": "DeepSeek V4 Flash (free tier — same model that powers OpenCode)"
+        },
+        "deepseek-v4-flash": {
+          "max_tokens": 64000,
+          "temperature": 0.7,
+          "description": "DeepSeek V4 Flash (paid tier)"
+        },
+        "deepseek-v4": {
+          "max_tokens": 128000,
+          "temperature": 0.7,
+          "description": "DeepSeek V4 full (paid tier)"
+        },
+        "gpt-4o": {
+          "max_tokens": 128000,
+          "temperature": 0.7,
+          "description": "OpenAI GPT-4o (requires OpenAI API key)"
+        },
+        "gpt-4o-mini": {
+          "max_tokens": 128000,
+          "temperature": 0.7,
+          "description": "OpenAI GPT-4o mini (requires OpenAI API key)"
+        },
+        "claude-sonnet-4": {
+          "max_tokens": 128000,
+          "temperature": 0.7,
+          "description": "Anthropic Claude Sonnet 4 (requires Anthropic API key)"
+        },
+        "gemini-2.5-pro": {
+          "max_tokens": 128000,
+          "temperature": 0.7,
+          "description": "Google Gemini 2.5 Pro (requires Google API key)"
+        }
+      }
+    },
+    "openai": {
+      "api_key": "",
+      "api_base": "https://api.openai.com/v1",
+      "models": {
+        "gpt-4o": { "max_tokens": 128000 },
+        "gpt-4o-mini": { "max_tokens": 128000 },
+        "o3-mini": { "max_tokens": 100000 },
+        "o1": { "max_tokens": 100000 }
+      }
+    },
+    "anthropic": {
+      "api_key": "",
+      "api_base": "https://api.anthropic.com/v1",
+      "models": {
+        "claude-sonnet-4-20250514": { "max_tokens": 128000 },
+        "claude-sonnet-4": { "max_tokens": 128000 },
+        "claude-3-5-sonnet-latest": { "max_tokens": 128000 },
+        "claude-3-5-haiku-latest": { "max_tokens": 128000 },
+        "claude-opus-4-20250514": { "max_tokens": 128000 }
+      }
+    },
+    "google": {
+      "api_key": "",
+      "api_base": "https://generativelanguage.googleapis.com/v1beta",
+      "models": {
+        "gemini-2.5-pro": { "max_tokens": 128000 },
+        "gemini-2.5-flash": { "max_tokens": 128000 },
+        "gemini-2.0-flash": { "max_tokens": 128000 }
+      }
+    }
+  },
+
+  "default_agent": "assistant",
+
+  "agents": {
+    "assistant": {
+      "description": "General-purpose coding assistant with full tool access.",
+      "mode": "primary",
+      "tools": ["read", "write", "edit", "glob", "grep", "bash", "websearch", "webfetch", "task"]
+    },
+    "coder": {
+      "description": "Focused on writing and editing code. Full file system access.",
+      "mode": "primary",
+      "tools": ["read", "write", "edit", "glob", "grep", "bash"]
+    },
+    "explorer": {
+      "description": "Fast codebase exploration and search. Read-only + search tools.",
+      "mode": "readonly",
+      "tools": ["read", "glob", "grep", "webfetch"]
+    },
+    "debugger": {
+      "description": "Debugging specialist. Can run code and inspect outputs.",
+      "mode": "primary",
+      "tools": ["read", "edit", "grep", "bash"]
+    }
+  },
+
+  "tools": {
+    "bash": {
+      "timeout": 120000,
+      "enabled": true
+    },
+    "websearch": {
+      "enabled": true,
+      "provider": "auto"
+    },
+    "webfetch": {
+      "enabled": true,
+      "timeout": 30
+    }
+  },
+
+  "skills_dir": ".agents/skills",
+
+  "ui": {
+    "theme": "dark",
+    "show_tool_calls": true,
+    "show_thinking": true,
+    "markdown": true,
+    "colors": {
+      "primary": "#00d4aa",
+      "secondary": "#7c3aed",
+      "accent": "#f59e0b",
+      "error": "#ef4444",
+      "success": "#22c55e",
+      "muted": "#6b7280"
+    }
+  },
+
+  "history": {
+    "enabled": true,
+    "max_messages": 100,
+    "store_path": ".cruf/history"
+  }
+}

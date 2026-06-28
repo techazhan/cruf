@@ -1,0 +1,4 @@
+.gitignore
+install.ps1
+install.sh
+node_modules/

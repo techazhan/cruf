@@ -1,0 +1,56 @@
+{
+  "name": "cruf",
+  "version": "1.0.0",
+  "description": "Cruf — Terminal AI Coding Assistant. Like OpenCode, but built for everyone. Use any LLM model to write, edit, and manage code from your terminal.",
+  "bin": {
+    "cruf": "./bin/cruf.js"
+  },
+  "type": "module",
+  "main": "./src/index.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "skills/",
+    ".cruf.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node bin/cruf.js",
+    "postinstall": "node ./bin/postinstall.js",
+    "cruf": "node bin/cruf.js"
+  },
+  "keywords": [
+    "ai",
+    "coding",
+    "cli",
+    "terminal",
+    "assistant",
+    "llm",
+    "openai",
+    "anthropic",
+    "google",
+    "gemini",
+    "chat",
+    "developer-tool"
+  ],
+  "author": "Cruf Labs",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cruf/cruf"
+  },
+  "bugs": {
+    "url": "https://github.com/cruf/cruf/issues"
+  },
+  "homepage": "https://github.com/cruf/cruf",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "ora": "^8.0.1",
+    "marked": "^13.0.0",
+    "strip-ansi": "^7.1.0"
+  }
+}

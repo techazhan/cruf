@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.cruf/history/
+*.log
+.DS_Store
+Thumbs.db
